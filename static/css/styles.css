@@ -1,0 +1,263 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfaf6; /* beige claro */
+    color: #3e2f1c; /* marrón oscuro */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #5a3e2b; /* tierra */
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ======== NAVBAR ======== */
+.site-header {
+    background-color: #8b5e3c;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #f5e0c3;
+}
+
+.nav-cta .btn-primary {
+    background: #f5e0c3;
+    color: #5a3e2b;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* ======== HERO ======== */
+.hero {
+    padding: 80px 20px;
+    background-color: #f8f1e7;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-copy {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero-copy h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-copy p {
+    margin-bottom: 20px;
+}
+
+.hero-actions .btn {
+    margin-right: 10px;
+}
+
+.hero-media img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* ======== PRODUCTOS ======== */
+#productos .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.producto-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.producto-card:hover {
+    transform: scale(1.03);
+}
+
+.ver-mas {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ======== ARTÍCULOS ======== */
+#articulos .articulos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.articulo-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.articulo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.articulo-card:hover {
+    transform: scale(1.02);
+}
+
+.articulo-card .card-body {
+    padding: 15px;
+}
+
+/* ======== EQUIPO ======== */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* ======== CONTACTO ======== */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form button {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #5a3e2b;
+}
+
+/* ======== FOOTER ======== */
+.site-footer {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-grid h4 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f5e0c3;
+}
+
+footer .copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 15px;
+}

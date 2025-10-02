@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MASCOTAS — Home</title>
+  <!-- En la siguiente etapa crearemos static/css/styles.css -->
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <!-- Nota: cuando migres a Flask/Jinja, reemplaza rutas estáticas por: {{ url_for('static', filename='...') }} -->
+</head>
+<body>
+  <!-- ====== NAV ====== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <a href="/" class="logo">Mascotas<span class="dot">.</span></a>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#quienes-somos">Quienes somos</a></li>
+          <li><a href="#contactanos">Contáctanos</a></li>
+          <li><a href="/productos.html">Productos</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="/productos.html">Ir a la tienda</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== HERO / BANNER ====== -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-copy">
+        <h1>Productos y cuidado para tus mascotas</h1>
+        <p>Alimentos, accesorios y consejos pensados para el bienestar de tu compañero de vida. Colores tierra, diseño cálido y atención personalizada.</p>
+        <div class="hero-actions">
+          <a href="/productos.html" class="btn btn-primary">Visitar tienda</a>
+          <a href="#articulos" class="btn btn-secondary">Leer artículos</a>
+        </div>
+      </div>
+
+      <!-- imagen de cabecera desde tu carpeta static/img -->
+      <div class="hero-media">
+        <img src="../static/IMG/principal.jpg" alt="Perro feliz" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SECCIÓN PRODUCTOS DESTACADOS ====== -->
+  <section id="productos" class="productos container">
+    <h2>Productos destacados</h2>
+    <p class="lead">Selección cuidada de alimentos y accesorios.</p>
+
+    <div class="grid productos-grid">
+      <article class="producto-card">
+        <a href="/productos.html#producto-1">
+          <img src="../static/IMG/gatocomida.jpg" alt="Producto 1" />
+          <div class="card-body">
+            <h3>Alimento balanceado Premium</h3>
+            <p class="price">$45.000</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="producto-card">
+        <a href="/productos.html#producto-2">
+          <img src="../static/IMG/comida.jpg" alt="Producto 2" />
+          <div class="card-body">
+            <h3>Snack natural para perros</h3>
+            <p class="price">$12.000</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="producto-card">
+        <a href="/productos.html#producto-3">
+          <img src="../static/IMG/gato%20blanco.webp" alt="Producto 3" />
+          <div class="card-body">
+            <h3>Juguete resistente</h3>
+            <p class="price">$20.000</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <div class="ver-mas">
+      <a href="/productos.html" class="btn btn-outline">Ver todos los productos</a>
+    </div>
+  </section>
+
+  <!-- ====== SECCIÓN ARTÍCULOS / BLOG ====== -->
+  <section id="articulos" class="articulos container">
+    <h2>Consejos y artículos</h2>
+    <p class="lead">Guías prácticas para el cuidado de tu mascota.</p>
+
+    <div class="grid articulos-grid">
+      <article class="articulo-card">
+        <img src="../static/IMG/cepillarperro.jpg" alt="Cómo cepillar a tu perro" />
+        <div class="card-body">
+          <h3>Cómo cepillar correctamente a tu perro</h3>
+          <p class="excerpt">Consejos sencillos para mantener el pelaje sano y libre de nudos.</p>
+          <a href="#" class="read-more">Leer más</a>
+        </div>
+      </article>
+
+      <article class="articulo-card">
+        <img src="../static/IMG/bebecomiendo.jpg" alt="Alimentación ideal" />
+        <div class="card-body">
+          <h3>Alimentación según la etapa de la vida</h3>
+          <p class="excerpt">Cómo adaptar la dieta desde cachorro hasta adulto mayor.</p>
+          <a href="#" class="read-more">Leer más</a>
+        </div>
+      </article>
+
+      <article class="articulo-card">
+        <img src="../static/IMG/camas.jpg" alt="Juegos y estimulación" />
+        <div class="card-body">
+          <h3>camas comodas </h3>
+          <p class="excerpt">Actividades que fortalecen el vínculo y evitan el aburrimiento.</p>
+          <a href="#" class="read-more">Leer más</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== SECCIÓN QUIENES SOMOS / EQUIPO ====== -->
+  <section id="quienes-somos" class="equipo container">
+    <h2>Quienes somos</h2>
+    <p class="lead">Somos un equipo apasionado por el bienestar animal. Conoce a los integrantes del proyecto.</p>
+
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="../static/IMG/hombre.jpg" alt="Miembro 1" />
+        <h4>Miembro 1</h4>
+        <p class="role">Fundador — Atención al cliente</p>
+      </div>
+
+      <div class="team-member">
+        <img src="../static/IMG/mujer gato.jpg" alt="Miembro 2" />
+        <h4>Miembro 2</h4>
+        <p class="role">Logística y compras</p>
+      </div>
+
+      <div class="team-member">
+        <img src="../static/IMG/mujerperro.jpg" alt="Miembro 3" />
+        <h4>Miembro 3</h4>
+        <p class="role">Contenido y redes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACTO ====== -->
+  <section id="contactanos" class="contacto container">
+    <h2>Contáctanos</h2>
+    <p>Puedes escribirnos para consultas, pedidos al por mayor o consejos personalizados.</p>
+
+    <form class="contact-form" action="/contacto" method="post">
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="email">Correo</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h4>Mascotas</h4>
+        <p>Plataforma de venta de productos y contenido de cuidado para mascotas — colores tierra y diseño cálido.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#quienes-somos">Quienes somos</a></li>
+          <li><a href="#contactanos">Contactanos</a></li>
+          <li><a href="/productos.html">Productos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>email: hola@mascotas.local</p>
+        <p>tel: +57 300 000 0000</p>
+      </div>
+    </div>
+    <div class="copyright">&copy; <span id="year"></span> Mascotas — Todos los derechos reservados</div>
+  </footer>
+
+  <script>
+    // Rellena el año en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- NOTAS PARA FLASK/JINJA:
+       - Mueve este archivo a templates/home.html
+       - Cambia enlaces a archivos estáticos por: {{ url_for('static', filename='css/styles.css') }} y {{ url_for('static', filename='img/nombre.jpg') }}
+       - Las rutas de formulario (action) se deben actualizar a las rutas de Flask (por ejemplo, url_for('contact'))
+  -->
+</body>
+</html>
+
